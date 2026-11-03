@@ -38,3 +38,26 @@ h1 {
     color: #e76f51;
     margin-bottom: 10px;
 }
+
+/* Homework 3: Responsive Layout */
+main {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#hobbies, #goals {
+    flex: 1;
+    min-width: 280px;    
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+}
