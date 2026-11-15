@@ -1,8 +1,23 @@
 <!DOCTYPE html>
-<html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>About - Gabriella</title><link rel="stylesheet" href="style.css"></head>
 <body>
 <header><h1>About / Contact</h1><p>More about me.</p></header>
 <nav><a href="index.html">Home</a><a href="projects.html">Projects / Work</a><a href="about.html">About / Contact</a></nav>
-<main><section><h2>About Me</h2><p>I'm a mom and music lover from Brooklyn.</p><p>Contact me through my portfolio.</p></section></main>
+<main><section><h2>About Me</h2><p>I'm a mom and music lover from Brooklyn.</p></section>
+<section><h2>Contact Me</h2>
+<form id="contact-form">
+<fieldset><legend>Send a message</legend>
+<label for="name">Name</label>
+<input id="name" name="name" type="text" required aria-describedby="name-error">
+<p id="name-error" class="error" role="alert">Please enter your name.</p>
+<label for="email">Email</label>
+<input id="email" name="email" type="email" required aria-describedby="email-error">
+<p id="email-error" class="error" role="alert">Please enter a valid email.</p>
+<label for="message">Message</label>
+<textarea id="message" name="message" rows="4" required aria-describedby="message-error"></textarea>
+<p id="message-error" class="error" role="alert">Please enter a message.</p>
+<button type="submit">Send</button>
+</fieldset>
+</form></section></main>
 <footer><p>2026 Gabriella Cedeno</p></footer></body></html>
