@@ -2,22 +2,25 @@
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>About - Gabriella</title><link rel="stylesheet" href="style.css"></head>
 <body>
-<header><h1>About / Contact</h1><p>More about me.</p></header>
-<nav><a href="index.html">Home</a><a href="projects.html">Projects / Work</a><a href="about.html">About / Contact</a></nav>
+<header><h1><button id="menu-btn" aria-expanded="false" aria-controls="main-nav">Menu</button>About / Contact</h1><p>More about me.</p></header>
+<nav id="main-nav"><a href="index.html">Home</a><a href="projects.html">Projects / Work</a><a href="about.html">About / Contact</a></nav>
 <main><section><h2>About Me</h2><p>I'm a mom and music lover from Brooklyn.</p></section>
 <section><h2>Contact Me</h2>
 <form id="contact-form">
+    <section><h2>Need a laugh?</h2>
+<p id="joke-box">Click the button for a joke.</p>
+<button id="joke-btn">Get a Joke</button></section>
 <fieldset><legend>Send a message</legend>
 <label for="name">Name</label>
 <input id="name" name="name" type="text" required aria-describedby="name-error">
-<p id="name-error" class="error" role="alert">Please enter your name.</p>
+<p id="name-error" class="error" role="alert" hidden>Please enter your name.</p>
 <label for="email">Email</label>
 <input id="email" name="email" type="email" required aria-describedby="email-error">
-<p id="email-error" class="error" role="alert">Please enter a valid email.</p>
+<p id="email-error" class="error" role="alert" hidden>Please enter a valid email.</p>
 <label for="message">Message</label>
 <textarea id="message" name="message" rows="4" required aria-describedby="message-error"></textarea>
-<p id="message-error" class="error" role="alert">Please enter a message.</p>
+<p id="message-error" class="error" role="alert" hidden>Please enter a message.</p>
 <button type="submit">Send</button>
 </fieldset>
 </form></section></main>
-<footer><p>2026 Gabriella Cedeno</p></footer></body></html>
+<footer><p>2026 Gabriella Cedeno</p></footer><script src="script.js" defer></script></body></html>

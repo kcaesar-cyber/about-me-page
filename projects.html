@@ -2,9 +2,13 @@
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Projects - Gabriella</title><link rel="stylesheet" href="style.css"></head>
 <body>
-<header><h1>My Projects</h1><p>What I'm working on.</p></header>
-<nav><a href="index.html">Home</a><a href="projects.html">Projects / Work</a><a href="about.html">About / Contact</a></nav>
+<header><h1><button id="menu-btn" aria-expanded="false" aria-controls="main-nav">Menu</button>My Projects</h1><p>What I'm working on.</p></header>
+<nav id="main-nav"><a href="index.html">Home</a><a href="projects.html">Projects / Work</a><a href="about.html">About / Contact</a></nav>
 <main><section><h2>Projects</h2>
-<div class="card-grid"><div class="card"><h3>Project 1: About Me Site</h3><p>My first HTML & CSS site.</p></div>
-<div class="card"><h3>Project 2: Goals</h3><p>Finish my web development class.</p></div></div></section></main>
-<footer><p>2026 Gabriella Cedeno</p></footer></body></html>
+    <button class="filter-btn" data-filter="all">All</button>
+<button class="filter-btn" data-filter="school">School</button>
+<button class="filter-btn" data-filter="personal">Personal</button>
+<div class="card" data-category="school"><h3>Project 1: About Me Site</h3></div>
+<div class="card" data-category="personal"><h3>Project 2: Goals</h3></div>
+<footer><p>2026 Gabriella Cedeno</p></footer><script src="script.js" defer></script>
+</body></html>

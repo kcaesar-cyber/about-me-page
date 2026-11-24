@@ -19,3 +19,7 @@ footer { background: #2E1A22; color: #FFFFFF; text-align: center; padding: 24px;
 #hobbies { border-left: 4px solid #C9738E; padding-left: 16px; }
 #main-nav { background: #2E1A22; }
 #contact-form { background: #FFFFFF; padding: 24px; border-radius: 8px; }
+@media (max-width: 768px) {
+  #main-nav { display: none; }
+  #main-nav.nav-open { display: block; }
+}
